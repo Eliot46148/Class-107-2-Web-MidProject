@@ -1,0 +1,16 @@
+.dark{
+    transition: filter .4s;
+}
+.dark:hover{
+    filter: brightness(0.5) saturate(100%);
+}
+.enlarge{
+    filter: brightness(0.85) saturate(100%);
+    transition: filter .4s;
+}
+.enlarge:hover{
+    filter: brightness(0.9) saturate(100%);
+    transform: scale(1.5);
+    z-index: 999;
+    position: fixed;
+}

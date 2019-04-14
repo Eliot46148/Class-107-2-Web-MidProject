@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>臺北科技大學圖書館-留言板</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="./script.js"></script>
+</head>
+<body  width="100%" height="100%" class="d-flex flex-column align-items-center" onload="Refresh()">
+    <div class="container d-flex flex-column">
+      <h1 class="font-weight-bold" style="padding-bottom: 50px;">留言...</h1>
+      <div style="width: 50%" class="d-flex flex-column align-self-center">
+          <input id='input1' class="form-control mr-sm-2" type="text" placeholder="你的名字" style="margin-bottom: 20px;">
+          <textarea class="form-control" rows="10" id="input2" placeholder="有話大聲說"  style="margin-bottom: 20px; resize:none;"></textarea>
+          <button type='submit' class="btn btn-success my-2 my-sm-0 font-weight-light" Refresh(); style="font-size: 20px;" onclick="javascript: Submit($('#input1').val(),$('#input2').val().replace(/\n/g,'<br>'));">Submit</button>
+      </div>
+      <h1 class="font-weight-bold" style="padding-top: 50px;">看看其他人說了什麼...</h1>
+    </div>
+    <div class="container" id='show' style="font-size: 10px; padding-top: 50px; padding-bottom: 50px;"><div class="row"></div></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+:root {
+    --paddingSide: 10%;
+}
+body{
+    background-color: #f0f0f0;
+}
+.png-link:hover{
+    filter: brightness(0.85) saturate(100%);
+}
+.nav-fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: aliceblue;
+}
+.TopNav{
+    width: 100%;
+    padding-left: var(--paddingSide);
+    padding-right: var(--paddingSide);
+    background-color: #00aac6;
+}
+.content{
+    padding-left: var(--paddingSide)!important;
+    padding-right: var(--paddingSide)!important;
+    background-color: #f0f0f0;
+}
+#logo{
+    width: 100%;
+    max-width: 300px;
+}
+.footer{
+    padding-left: var(--paddingSide);
+    padding-right: var(--paddingSide);
+    border-top: 1px solid #909090;
+    background-color: #00aac6;
+}
+.round5{
+    border-radius: .5rem;
+}
+#copyright{
+    color: #f0f0f0;
+    text-decoration: none;
+}
+.shallow:hover{
+    filter: brightness(0.6) saturate(100%);
+}
+.bot{
+    margin:5px;
+}
