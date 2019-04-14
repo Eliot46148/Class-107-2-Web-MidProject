@@ -17,9 +17,21 @@ function resizeIframe(obj) {
   obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
 }
 
-function changeHTML(id, html) {
+function changeHTML(id, html, newTitle) {
   var element = document.getElementById(id);
   if (html!=''){
     element.setAttribute('src',html);
+    changeTitle(newTitle);
+  }
+}
+
+function changeTitle(newTitle){
+  if (document.title != newTitle) {
+    document.title = newTitle;
+  }
+  if (newTitle==''){
+    $('meta[name="description"]').attr("content", '臺北科技大學圖書館');
+  }else{
+    $('meta[name="description"]').attr("content", newDescription);
   }
 }
