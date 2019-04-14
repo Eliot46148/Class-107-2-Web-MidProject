@@ -4,7 +4,7 @@
   <title>臺北科技大學圖書館</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href = "./圖片/33874-200.png" rel="icon" type="image/gif">
+  <link href = "./圖片/library.png" rel="icon" type="image/gif">
   <link rel="stylesheet" type="text/css" href="./style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,28 +18,28 @@
     <div class="TopNav">
       <a target="_blank" rel="noopener noreferrer" href="https://lib.ntut.edu.tw/sp.asp?xdurl=mp100/active.asp&mp=100&ctNode=1283"><img id='logo' src="https://lib.ntut.edu.tw/GIPDSD/xslGip/xslExport/100/WEB_RWD/images/logo.png" alt=""></a>
     </div>
-    <div class='bg-dark' id="navigator" style="width: 100%;background-color: #e0e0e0; padding-left: var(--paddingSide); padding-right: var(--paddingSide);">
+    <div class='bg-darker' id="navigator" style="width: 100%;background-color: #e0e0e0; padding-left: var(--paddingSide); padding-right: var(--paddingSide);">
         <nav class="navbar navbar-expand-md">
-          <button type="button" class="btn btn-dark png-link" onclick="changeHTML('splitSite','視聽館/index.html','臺北科技大學圖書館')"><img src="./圖片/33874-200.png" width="50"alt=""> 視聽館</button>
+          <button type="button" class="btn btn-dark png-link" onclick="changeHTML('splitSite','視聽館/index.html','臺北科技大學圖書館')"><img src="./圖片/library.png" width="50"alt=""> 視聽館</button>
           <button class="bot  navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="main-navigation">
             <ul class="btn navbar-nav">
               <li class="nav-item">
-                <button type="button" class="bot btn btn-dark png-link"  onclick="changeHTML('splitSite','排行榜/leaderboard.html','臺北科技大學圖書館-影音排行榜')">影音排行榜</button>
+                <button type="button" class="bot btn btn-dark png-link"  onclick="changeHTML('splitSite','排行榜/leaderboard.html','臺北科技大學圖書館-影音排行榜')"><img src="./圖片/leaderboard.png" width="50"alt="">影音排行榜</button>
               </li>
               <li class="nav-item">
-                  <button type="button" class="bot btn btn-dark png-link"  onclick="changeHTML('splitSite','強檔新片/newmovie.html','臺北科技大學圖書館-強檔新片')">強檔新片</button>
+                  <button type="button" class="bot btn btn-dark png-link"  onclick="changeHTML('splitSite','強檔新片/newmovie.html','臺北科技大學圖書館-強檔新片')"><img src="./圖片/newmovie.png" width="50"alt="">強檔新片</button>
               </li>
               <li class="nav-item">
-                  <button type="button" class="bot btn btn-dark png-link"  onclick="changeHTML('splitSite','嚴選經典/classic.html','臺北科技大學圖書館-經典嚴選')">經典嚴選</button>
+                  <button type="button" class="bot btn btn-dark png-link"  onclick="changeHTML('splitSite','嚴選經典/classic.html','臺北科技大學圖書館-經典嚴選')"><img src="./圖片/classic.png" width="50"alt="">經典嚴選</button>
               </li>
               <li class="nav-item">
-                  <button type="button" class="bot btn btn-dark png-link"  onclick="changeHTML('splitSite','','臺北科技大學圖書館-主題影展')">主題影展</button>
+                  <button type="button" class="bot btn btn-dark png-link"  onclick="changeHTML('splitSite','','臺北科技大學圖書館-主題影展')"><img src="./圖片/genre.png" width="50"alt="">主題影展</button>
               </li>
               <li class="nav-item">
-                  <button type="button" class="bot btn btn-dark png-link"  onclick="changeHTML('splitSite','留言板/index.html','臺北科技大學圖書館-留言板');">留言板</button>
+                  <button type="button" class="bot btn btn-dark png-link"  onclick="changeHTML('splitSite','留言板/index.html','臺北科技大學圖書館-留言板');"><img src="./圖片/chat.png" width="50"alt="">留言板</button>
               </li>
             </ul>
           </div>
@@ -48,7 +48,7 @@
   <div class="container-fluid content">
     <iframe class="embed-responsive-item round5" id="splitSite" src="視聽館/index.html" frameborder="0" width="100%" scrolling="no" onload="resizeIframe(this)" style="border: 1px solid #909090;"></iframe>
   </div>
-  <footer class="footer font-small pt-4 bg-dark text-white">
+  <footer class="footer font-small pt-4 bg-darker text-white">
           <div class="container-fluid text-center text-md-left">
             <div class="row d-flex flex-row justify-content-around">
               <div class="d-flex flex-column col-md-5">
@@ -63,10 +63,10 @@
                 </div>
                   <div class="d-flex flex-wrap">
                       <button type="button" style="color: blue;" class="bot shallow btn btn-dark col-md-2"><i class="fa fa-facebook-official" aria-hidden="true"> Facebook </i></button>
-                      <button type="button" style="color: gainsboro;" class="insta bot shallow btn btn-dark col-md-2"><i class="fa fa-instagram" aria-hidden="true"> Instagram </i></button>
+                      <button type="button" style="color: gainsboro;" class="insta bot btn-dark shallow btn col-md-2"><i class="fa fa-instagram" aria-hidden="true"> Instagram </i></button>
                       <button type="button" style="color: aqua;" class="bot shallow btn btn-dark col-md-2"><i class="fa fa-twitter" aria-hidden="true"> Twitter </i></button>
                       <button type="button" style="color: red;" class="bot shallow btn btn-dark col-md-2"><i class="fa fa-youtube-play" aria-hidden="true"> Youtube </i></button>
-                      <button type="button" style="color: purple;" class="bot shallow btn btn-dark col-md-2"><i class="fa fa-github" aria-hidden="true"> Github </i></button>
+                      <button type="button" style="color: purple;" class="bot shallow btn-dark btn col-md-2"><i class="fa fa-github" aria-hidden="true"> Github </i></button>
                   </div>
                 </div>
               </div>
@@ -74,7 +74,7 @@
           <hr class="w-100" style="margin-top:30px;" color="#909090">
           <div class="d-flex justify-content-center align-itmes-center">
             <p class="my-auto">© 2019 Copyright：</p>
-            <button type="button" style="color: white;" class="bot shallow btn btn-dark" id='copyright' onclick="window.open(window.location.href)">三人網頁小圈圈</a></button>
+            <button type="button" style="color: white;" class="bot shallow btn" id='copyright' onclick="window.open(window.location.href)">三人網頁小圈圈</a></button>
           </div>
     </footer>
 </body>
