@@ -27,7 +27,7 @@ body{
 
 .video-img{
     display: block;
-    width : 200px;
+    width : 100%;
 }
 
 .list-item:hover .video-img{
