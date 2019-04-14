@@ -28,10 +28,7 @@ function changeHTML(id, html, newTitle) {
 function changeTitle(newTitle){
   if (document.title != newTitle) {
     document.title = newTitle;
-  }
-  if (newTitle==''){
-    $('meta[name="description"]').attr("content", '臺北科技大學圖書館');
-  }else{
-    $('meta[name="description"]').attr("content", newDescription);
+  }else if(newTitle !=''){
+    document.title = '臺北科技大學圖書館';
   }
 }
