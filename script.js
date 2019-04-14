@@ -17,9 +17,16 @@ function resizeIframe(obj) {
   obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
 }
 
-function changeHTML(id, html) {
+function changeHTML(id, html, newTitle) {
   var element = document.getElementById(id);
   if (html!=''){
     element.setAttribute('src',html);
+    changeTitle(newTitle);
+  }
+}
+
+function changeTitle(newTitle){
+  if (document.title != newTitle){
+    document.title = newTitle;
   }
 }

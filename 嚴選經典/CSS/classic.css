@@ -1,0 +1,30 @@
+html{
+    background: #f0f0f0;
+    width: 100%;
+}
+body{
+    background-color: #f0f0f0;
+}
+.blockstyle{
+    display: block;        
+}
+.imagestyle{
+    width: 650px;
+    float: left;
+    margin-left: 3%;
+}
+.textstyle{
+    font-size: 24px;
+    text-align: center;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.jumbotron{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #909090;
+}
+.myMOUSE{ 
+    cursor: pointer; 
+}
