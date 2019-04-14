@@ -35,5 +35,5 @@ function Submit(in1, in2){
 
 function CreatePanel(name, comment){
   var node = "<div class='col-md-3'><div class='panel panel-default'><div class='panel-heading'><strong>" + name + "</strong><span class='text-muted'></span></div><div class='panel-body'>" + comment + "</div></div></div>"
-  $("#show").append(node);
+  $("#show .row").append(node);
 }
