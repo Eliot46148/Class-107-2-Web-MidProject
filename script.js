@@ -13,8 +13,11 @@ $(window).scroll(function(){
         }
 });
 
-function resizeIframe(obj) {
-  obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+function iframeLoaded() {
+  var iFrameID = document.getElementById('splitSite');
+  if(iFrameID) {
+        iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+  }   
 }
 
 function changeHTML(id, html, newTitle) {

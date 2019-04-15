@@ -18,7 +18,7 @@
       <div style="width: 50%" class="d-flex flex-column align-self-center">
           <input id='input1' class="form-control mr-sm-2" type="text" placeholder="你的名字" style="margin-bottom: 20px;">
           <textarea class="form-control" rows="10" id="input2" placeholder="有話大聲說"  style="margin-bottom: 20px; resize:none;"></textarea>
-          <button type='submit' class="btn btn-success my-2 my-sm-0 font-weight-light" Refresh(); style="font-size: 20px;" onclick="javascript: Submit($('#input1').val(),$('#input2').val().replace(/\n/g,'<br>'));">Submit</button>
+          <button type='submit' class="btn btn-success my-2 my-sm-0 font-weight-light" style="font-size: 20px;" onclick="javascript: Submit($('#input1').val(),$('#input2').val().replace(/\n/g,'<br>')); $('#input1').val(''); $('#input2').val('');">Submit</button>
       </div>
       <h1 class="font-weight-bold" style="padding-top: 50px;">看看其他人說了什麼...</h1>
     </div>

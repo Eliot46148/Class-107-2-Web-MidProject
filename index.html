@@ -16,11 +16,11 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138253485-1"></script>
   <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-138253485-1');</script>
 </head>
-<body>
+<body style="height: 100%;">
     <div class="TopNav">
       <a target="_blank" rel="noopener noreferrer" href="https://lib.ntut.edu.tw/sp.asp?xdurl=mp100/active.asp&mp=100&ctNode=1283"><img id='logo' src="https://lib.ntut.edu.tw/GIPDSD/xslGip/xslExport/100/WEB_RWD/images/logo.png" alt=""></a>
     </div>
-    <div class='bg-darker' id="navigator" style="width: 100%;background-color: #e0e0e0; padding-left: var(--paddingSide); padding-right: var(--paddingSide);">
+    <div class='bg-darker' id="navigator" style="z-index:998; width: 100%; background-color: #e0e0e0; padding-left: var(--paddingSide); padding-right: var(--paddingSide);">
         <nav class="navbar navbar-expand-md">
           <button type="button" class="btn btn-dark png-link" onclick="changeHTML('splitSite','視聽館/index.html','臺北科技大學圖書館')"><img src="./圖片/library.png" width="50"alt=""> 視聽館</button>
           <button class="bot  navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
@@ -48,14 +48,14 @@
         </nav>
     </div>
   <div class="container-fluid content">
-    <iframe class="embed-responsive-item round5" id="splitSite" src="視聽館/index.html" frameborder="0" width="100%" scrolling="no" onload="resizeIframe(this)" style="border: 1px solid #909090;"></iframe>
+    <iframe class="embed-responsive-item round5" id="splitSite" src="視聽館/index.html" frameborder="0" width="100%" scrolling="no" onload="iframeLoaded()" style="border: 1px solid #909090;"></iframe>
   </div>
   <footer class="footer font-small pt-4 bg-darker text-white">
           <div class="container-fluid text-center text-md-left">
             <div class="row d-flex flex-row justify-content-around">
               <div class="d-flex flex-column col-md-5">
                 <h5 class="font-weight-bold">相關資訊</h5>
-                <p style="font-size: 8px;">電話：02-2771-2171 # 3100 傳真：02-2776-2383 e-mail：library@ntut.edu.tw <br>地址：10608 臺北市大安區忠孝東路三段一號 <br>開放時間：週一～六 8：30-22：00；週日 09:00-17:00</p>
+                <p style="font-size: 15px;">電話：02-2771-2171 # 3100 傳真：02-2776-2383<br>e-mail：library@ntut.edu.tw <br>地址：10608 臺北市大安區忠孝東路三段一號 <br>開放時間：週一～六 8：30-22：00；週日 09:00-17:00</p>
               </div>
               <div style="border-left: 1px solid #909090; overflow:hidden; width:1px;"></div>
               <div class="d-flex flex-column col-md-5">
@@ -64,11 +64,11 @@
                   <button type="button" style="color: white;" class="bot shallow btn btn-dark w-100" onclick="window.open('https://www.ntut.edu.tw/')">學校官網</button>
                 </div>
                   <div class="d-flex flex-wrap">
-                      <button type="button" style="color: blue;" class="bot shallow btn btn-dark col-md-2"><i class="fa fa-facebook-official" aria-hidden="true"> Facebook </i></button>
-                      <button type="button" style="color: gainsboro;" class="insta bot btn-dark shallow btn col-md-2"><i class="fa fa-instagram" aria-hidden="true"> Instagram </i></button>
-                      <button type="button" style="color: aqua;" class="bot shallow btn btn-dark col-md-2"><i class="fa fa-twitter" aria-hidden="true"> Twitter </i></button>
-                      <button type="button" style="color: red;" class="bot shallow btn btn-dark col-md-2"><i class="fa fa-youtube-play" aria-hidden="true"> Youtube </i></button>
-                      <button type="button" style="color: purple;" class="bot shallow btn-dark btn col-md-2"><i class="fa fa-github" aria-hidden="true"> Github </i></button>
+                      <button type="button" style="color: dodgerblue ;" class="bot shallow btn btn-dark col-md-2 text-center align-items-center"><i class="fa fa-facebook-official" aria-hidden="true" style="font-size: 30px;"></i><p style="font-size: 8px;">Facebook</p></button>
+                      <button type="button" style="color: gainsboro;" class="insta bot btn-dark shallow btn col-md-2"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 30px;"></i><p style="font-size: 8px;">Instagram</p></button>
+                      <button type="button" style="color: aqua;" class="bot shallow btn btn-dark col-md-2"><i class="fa fa-twitter" aria-hidden="true" style="font-size: 30px;"></i><p style="font-size: 8px;">Twitter</p></button>
+                      <button type="button" style="color: red;" class="bot shallow btn btn-dark col-md-2"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 30px;"></i><p style="font-size: 8px;">Youtube</p></button>
+                      <button type="button" style="color: violet;" class="bot shallow btn-dark btn col-md-2" onclick="window.open('https://github.com/joseph871107/Class-107-2-Web-MidProject')"><i class="fa fa-github" aria-hidden="true" style="font-size: 30px;"></i><p style="font-size: 8px;">Github</p></button>
                   </div>
                 </div>
               </div>
